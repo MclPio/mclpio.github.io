@@ -38,8 +38,8 @@ social:
   email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/mclpio # change to your twitter homepage
     - https://github.com/mclpio # change to your github homepage
+    - https://twitter.com/mclpio # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/michaelpious
@@ -76,7 +76,7 @@ theme_mode: # [light | dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYb6azkVcRhuUfeiRUBNbc9X2zCnzpjNDfaNRGF1grNENq9AzPGTDqyPkotPvd0wiSLUjiZvYpbuN2oszkOC8cWNXCSAg=w925-h968
+avatar: assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

@@ -2,9 +2,9 @@
 title: "Binary Search"
 date: 2024-03-16
 categories:
-  - Blog
+  - Programming
 tags:
-  Algorithm
+  algorithm
 ---
 I would like to talk about Binary Search in my first post. I just read the first chapter of *Grokking Algorithms* by Aditya Y. Bhargava and wanted a fun way to write down what I learned to solidify my understanding. I plan to make an implementation with Ruby and talk about time complexity of the algorithm.
 
