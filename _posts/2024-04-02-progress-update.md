@@ -1,6 +1,7 @@
 ---
 title: "Progress Update"
 date: 2024-03-16
+last_modified_at: 2024-04-21
 categories:
   - Personal Development
 ---
@@ -154,9 +155,9 @@ I have faced a few challenges I would like to share here.
 
     This remains unsolved... is the solution in refactoring the controllers? routes? or can this simply be fixed with some tweaks to the views?
 
-2. Deployment... I deployed 2 rails apps before with my Paas provider but for some reason, this time it wants to spew out errors and not deploy in 1 command like I would expect them to. What will I do? Try again later, maybe using a different devise. As it happened before that deployments failed because of issues with the Paas service and not my configuration, I will leave the troubleshooting for later.
+2. Deployment... I deployed 2 rails apps before with my Paas provider but for some reason, this time it wants to spew out errors and not deploy in 1 command like I would expect them to. What will I do? Try again later, maybe using a different devise. As it happened before that deployments failed because of issues with the Paas service and not my configuration, I will leave the troubleshooting for later. *Update*: I found out too little RAM allocated to server can cause all types of issues, for example my database seed was not working due to low memory, I found the problem from checking the live server logs, easy fix.
 
-3. Testing. This has been my first time trying to seriously implement tests when developing an application. I thought I would be developing mediocre tests at best and as it turns out I did. As my UI changed, I am sure some of my system tests would fail but oh well.
+3. Testing. This has been my first time trying to seriously implement tests when developing an application. I thought I would be developing mediocre tests at best and as it turns out I did. As my UI changed, I am sure some of my system tests would fail but oh well. *Update*: So I managed to update all my system and model tests for my newly updated UI, I even found an issue caused by Turbo for when a user would like to update their comments. I was quite happy as my tests actually did help me catch an issue after I updated my app's UI.
 
 4. Features I did not add. Notifications and real time messaging. I do feel FOMO for not doing them but I am afraid it will take more time than necessary to implement and would be outside of the scope of this project. Another one is AWS image storage which was a recommended bonus to add. 
 
