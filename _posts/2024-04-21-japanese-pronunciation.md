@@ -8,7 +8,7 @@ tags:
 ---
 
 # Intro
-This post will mainly serve to help me retain my knowledge by summarizing important information I've learned. I recently watched ["Japanese Pronunciation, Video 1: The Japanese Writing Systems and Pitch Accent"](https://www.youtube.com/watch?v=ReTQSh15GII). I am following a guideline I found to get me started on my learning journey, ["A year to learn Japanese"](https://www.reddit.com/r/LearnJapanese/comments/fohull/a_year_to_learn_japanese_reflections_on_five/). It's a detailed guide, especially considering it's freely accessible on the web.
+This post will mainly serve to help me retain my knowledge by summarizing important information I've learned. I recently watched [Japanese Pronunciation, Video 1: The Japanese Writing Systems and Pitch Accent](https://www.youtube.com/watch?v=ReTQSh15GII). I am following a guideline I found to get me started on my learning journey, [A year to learn Japanese](https://www.reddit.com/r/LearnJapanese/comments/fohull/a_year_to_learn_japanese_reflections_on_five/). It's a detailed guide, especially considering it's freely accessible on the web.
 
 ## The Japanese Writing System
 - **Kanji**: adopted Chinese characters
