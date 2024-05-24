@@ -1,5 +1,5 @@
 ---
-title: "Personal Project I"
+title: "Personal Project I: Part I"
 date: 2024-04-21
 categories:
   - Personal Development
@@ -19,8 +19,6 @@ Make a product that automatically processes my google calendar daily data and in
 ## Personal Comments
 I have bias towards certain technologies and API's because they are simply *cool* to me. First, google has a calendar [API](https://developers.google.com/calendar/api/guides/overview) that I can and will have to use. Second, I want to add open ai API to my app as well just for the cool factor, I am biased towards AI and will be careful not to needlessly add it into my app because if I have to monetize, it **WILL** get complicated. However if there is a geniune unique feature that would differentiate the app with open ai API's, I would do so.
 
-## Deadline
-**2024-05-21**. A MONTH. Within a month I will build a rails app that is simple yet usable, I will take the fastest routes to implement my ideas.
 
 ## Conclusion
 I will be summarizing my daily progress on the blog with titles "Personal Project I: Day X"

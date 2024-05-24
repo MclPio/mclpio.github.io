@@ -1,5 +1,5 @@
 ---
-title: "Personal Project I: Day 2"
+title: "Personal Project I: Part 2"
 date: 2024-04-23
 categories:
   - Personal Development
