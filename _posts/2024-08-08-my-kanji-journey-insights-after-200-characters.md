@@ -1,6 +1,6 @@
 ---
 title: "My Kanji Journey: Insights After 200 Characters"
-date: 2024-04-23
+date: 2024-08-08
 categories:
   - Japanese
 tags:
