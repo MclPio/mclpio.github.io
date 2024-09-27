@@ -28,8 +28,8 @@ url: "https://www.michaelpious.com"
 github:
   username: MclPio # change to your github username
 
-twitter:
-  username: MclPio # change to your twitter username
+# twitter:
+#   username: _ # change to your twitter username
 
 social:
   # Change to your full name.
@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/mclpio # change to your github homepage
-    - https://twitter.com/mclpio # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/michaelpious
