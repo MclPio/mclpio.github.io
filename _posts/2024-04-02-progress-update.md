@@ -1,5 +1,5 @@
 ---
-title: "Progress Update"
+title: "Odinbook - Progress Update"
 date: 2024-03-16
 last_modified_at: 2024-04-21
 categories:
