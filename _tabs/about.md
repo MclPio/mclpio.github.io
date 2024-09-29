@@ -9,6 +9,7 @@ Hello 👋, I'm Michael, a passionate software developer based in Toronto. Curre
 ## Philosophy 🚀
 
 I am continually evolving and learning every day. For now, here's my philosophy:
+
 - **Efficiently solving valuable problems** is my priority, focusing on results over details.
 
 ## Projects Showcase 🛠️
@@ -16,9 +17,9 @@ I am continually evolving and learning every day. For now, here's my philosophy:
 Here are some of the projects I've worked on:
 
 - [Odinbook](https://github.com/MclPio/odinbook)
-- [Private Events](https://github.com/MclPio/private-events)
+- [Weather App](https://github.com/MclPio/weather-app)
 - [Odin Flight Booker](https://github.com/MclPio/odin-flight-booker)
-- [Flickr API](https://github.com/MclPio/odin-flickr-api)
+- [Calendar Analytics](https://github.com/calendar-analytics/calendar-analytics) **<IN PROGRESS!>**
 
 ## Skills and Technologies 💻
 
