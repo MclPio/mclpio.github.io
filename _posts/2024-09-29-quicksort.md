@@ -146,7 +146,7 @@ flowchart TD
 
 - **Worst Case**: $$ O(N) $$ – where the partition is unbalanced so you do most recursion calls making a big call stack.
 
-## Minor Section
+## Recap
 
 ### Caveat
 
@@ -157,8 +157,6 @@ Quicksort is not a stable sorting algorithm, it does not preserve the relative o
 - If we have an empty array `[]` our function returns does nothing.
 - If we have one element `[1]` our function does nothing.
 - If we have identical elements `[1, 1, 1]`, our function runs switching position of elements.
-
-## Recap
 
 In summary, Quicksort efficiently sorts an array by dividing it into smaller sub arrays using a pivot. By recursively applying the partitioning process, the array is sorted in place.
 
