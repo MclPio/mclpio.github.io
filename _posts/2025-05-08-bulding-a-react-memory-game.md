@@ -7,7 +7,7 @@ description: Implementing React concepts learned so far, including state managem
 ---
 
 # Introduction
-I will be discussing the benefits of having diverse, hands-on knowledge of a technology, how it helped me with a previous project, and why it convinced me to work on a few React projects via [The Odin Project](https://www.theodinproject.com).
+I will be discussing the benefits of having diverse, hands-on knowledge of a technology, how it helped me with a previous project, and why it convinced me to work on a few React projects via [The Odin Project](https://www.theodinproject.com). If you just want to play the game, [Click Here](https://anime-memory.netlify.app/).
 
 ## Background
 I have been working with React for the last few months, completing my milestones by relying on the [React documentation](https://react.dev/learn) or large language models when needed. This was manageable because I had basic knowledge of the framework from an introductory tutorial and a strong foundation in JavaScript. Check out my JavaScript battleship [game](https://www.michaelpious.com/battleship/)!
