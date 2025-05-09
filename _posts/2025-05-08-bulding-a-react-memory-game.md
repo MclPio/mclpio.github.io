@@ -3,28 +3,27 @@ title: "Building a React Memory Game: Why Hands-On Learning Wins"
 date: 2025-05-08
 categories:
   - React
-  - JavaScript
-description: Implementing react concepts learned so far including state management, side effects, using data from an external API
+description: Implementing React concepts learned so far, including state management, side effects, and using data from an external API.
 ---
 
-# Intro
-I will be discussing the benefits of having diverse, hands-on knowledge of a technology, how it helped me with a previous project, and why it convinced me to tackle a few React projects via [TheOdinProject](https://www.theodinproject.com).
+# Introduction
+I will be discussing the benefits of having diverse, hands-on knowledge of a technology, how it helped me with a previous project, and why it convinced me to work on a few React projects via [The Odin Project](https://www.theodinproject.com).
 
 ## Background
-I have been working with React professionally for the last few months, managing to get my tasks done by searching the docs when needed. It was manageable since I had some basic knowledge of the framework from an introductory [tutorial](https://react.dev/learn).
+I have been working with React for the last few months, completing my milestones by relying on the [React docs](https://react.dev/learn) or large language models when needed. This was manageable because I had basic knowledge of the framework from an introductory tutorial and a strong foundation in [JavaScript](https://www.michaelpious.com/battleship/).
 
-Recently, I worked with CSS to design a homepage for one of my client's sites. I found it quite easy since I already had knowledge from [TheOdinProject](https://www.theodinproject.com)'s advanced CSS courses and projects I had completed. Given this revelation, I decided to open the React course on [TheOdinProject](https://www.theodinproject.com).
+Recently, I worked with CSS to design a homepage for one of my client's sites. I found it quite easy since I already had knowledge from [The Odin Project](https://www.theodinproject.com)'s advanced CSS courses and projects I had completed. Given this realization, I decided to work on the React course on [The Odin Project](https://www.theodinproject.com).
 
-I believe that understanding a technology with diverse knowledge of its capabilities boosts development because I know what I am capable of doing, just like in the CSS example I described.
+I believe that understanding a technology’s capabilities through diverse knowledge accelerates development. Knowing what you’re capable of, as demonstrated in my CSS experience, boosts confidence and efficiency.
 
 ## The Project
 My latest project was a memory card game. For details on how it works, check out my [game](https://anime-memory.netlify.app/). The goal was to recap what was taught so far in the course: state management, managing side effects, and using data from an external API.
 
 ### Managing State
-I have been working extensively with the [useState](https://react.dev/reference/react/useState) hook in my client's work. It’s a common hook, and I used it to store data like anime ID, cards, anime title, and more.
+I’ve extensively used the [useState](https://react.dev/reference/react/useState) hook in my work. It’s a fundamental hook, and I used it to store data like anime ID, cards, anime title, and more.
 
-### External API Data, Jikan
-I found a free API called [Jikan](https://jikan.moe/), which uses MyAnimeList to get anime info. It’s well-documented and doesn’t require authentication. Below are two files showing its use case. I call the API, get JSON data, and map out the data needed for rendering.
+### External API Data: Jikan
+I found a free API called [Jikan](https://jikan.moe/), which uses MyAnimeList to get anime info. It’s well documented and doesn’t require authentication. Below are two files showing its use case. I call the API, get JSON data, and map out the data needed for rendering.
 
 ```javascript
 // src/utils/getCharacters.js
@@ -86,9 +85,25 @@ useEffect(() => {
 ```
 
 ### Lessons Learned
-* Having hands-on experience with a technology that covers it broadly is helpful when deciding on solution implementation. Instead of asking an LLM, "How do I center this div in my element?", you can ask, "Is using flexbox the best option here?" This is the difference between knowing nothing about a technology and having broad knowledge.
-* Be careful about wasting time. For example, don’t get overworked about how your project looks. Conclude that you’re not a designer, you didn’t make the designs, and the goal here is to learn React.
+* Hands-on experience with a technology informs better solution implementation. Instead of asking a large language model, "How do I center this div in my element?", you can ask, "Is using flexbox the best option here?" This is the difference between knowing nothing about a technology and having broad knowledge.
+* Time management is critical. For this project, I focused on a basic CSS skeleton and used a large language model to style the project in about an hour, avoiding hours of manual styling.
 * `useEffect` is critical for detecting and updating state.
 
-## To End
-Studying docs and building small projects like this memory game builds the context to solve problems efficiently. I’m continuing [TheOdinProject](https://www.theodinproject.com)'s React course to sharpen my web development skills. Whatever tech you use, learn it hands-on instead of leaning on Large Language Models—it sets you up for success. Try the [game](https://anime-memory.netlify.app/), share your React tips below, or check my [github](https://your-portfolio-link). Need a React developer? Reach out on LinkedIn.
+### Extra: Interesting Algorithm
+The modern, Fisher–Yates shuffle did well to shuffle the cards on each click in linear time.
+
+```javascript
+// src/utils/shuffle.js
+export default function shuffle(arr) {
+  for (let i = arr.length - 1; i >= 1; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr
+}
+```
+
+I copied this line by line from [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#JavaScript_implementation). It’s a concise and elegant algorithm.
+
+## Conclusion
+Studying docs and building small projects like this memory game builds the context to solve problems efficiently. I’m continuing [The Odin Project](https://www.theodinproject.com)'s React course to sharpen my web development skills. Whatever tech you use, learn it hands-on instead of leaning on large language models, it sets you up for success. Try the [game](https://anime-memory.netlify.app/), share your React tips below, or check my [github](https://github.com/MclPio). Need a React developer? Reach out on [LinkedIn](https://www.linkedin.com/in/michaelpious/).
