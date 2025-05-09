@@ -10,7 +10,7 @@ description: Implementing React concepts learned so far, including state managem
 I will be discussing the benefits of having diverse, hands-on knowledge of a technology, how it helped me with a previous project, and why it convinced me to work on a few React projects via [The Odin Project](https://www.theodinproject.com).
 
 ## Background
-I have been working with React for the last few months, completing my milestones by relying on the [React docs](https://react.dev/learn) or large language models when needed. This was manageable because I had basic knowledge of the framework from an introductory tutorial and a strong foundation in [JavaScript](https://www.michaelpious.com/battleship/).
+I have been working with React for the last few months, completing my milestones by relying on the [React documentation](https://react.dev/learn) or large language models when needed. This was manageable because I had basic knowledge of the framework from an introductory tutorial and a strong foundation in JavaScript. Check out my JavaScript battleship [game](https://www.michaelpious.com/battleship/)!
 
 Recently, I worked with CSS to design a homepage for one of my client's sites. I found it quite easy since I already had knowledge from [The Odin Project](https://www.theodinproject.com)'s advanced CSS courses and projects I had completed. Given this realization, I decided to work on the React course on [The Odin Project](https://www.theodinproject.com).
 
@@ -20,7 +20,7 @@ I believe that understanding a technology’s capabilities through diverse knowl
 My latest project was a memory card game. For details on how it works, check out my [game](https://anime-memory.netlify.app/). The goal was to recap what was taught so far in the course: state management, managing side effects, and using data from an external API.
 
 ### Managing State
-I’ve extensively used the [useState](https://react.dev/reference/react/useState) hook in my work. It’s a fundamental hook, and I used it to store data like anime ID, cards, anime title, and more.
+I’ve extensively used the [useState](https://react.dev/reference/react/useState) hook in my work. It’s a fundamental hook, and I have applied it to store data like anime ID, cards, anime title, and more.
 
 ### External API Data: Jikan
 I found a free API called [Jikan](https://jikan.moe/), which uses MyAnimeList to get anime info. It’s well documented and doesn’t require authentication. Below are two files showing its use case. I call the API, get JSON data, and map out the data needed for rendering.
@@ -106,4 +106,4 @@ export default function shuffle(arr) {
 I copied this line by line from [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#JavaScript_implementation). It’s a concise and elegant algorithm.
 
 ## Conclusion
-Studying docs and building small projects like this memory game builds the context to solve problems efficiently. I’m continuing [The Odin Project](https://www.theodinproject.com)'s React course to sharpen my web development skills. Whatever tech you use, learn it hands-on instead of leaning on large language models, it sets you up for success. Try the [game](https://anime-memory.netlify.app/), share your React tips below, or check my [github](https://github.com/MclPio). Need a React developer? Reach out on [LinkedIn](https://www.linkedin.com/in/michaelpious/).
+Studying documentation and building small projects like this memory card game builds the context to solve problems efficiently. I’m continuing [The Odin Project](https://www.theodinproject.com)'s React course to sharpen my web development skills. Whatever tech you use, learn it hands-on instead of leaning on large language models, it sets you up for success. Try the [game](https://anime-memory.netlify.app/), share your React tips, or check my [github](https://github.com/MclPio). Need a React developer? Reach out on [LinkedIn](https://www.linkedin.com/in/michaelpious/).
