@@ -10,7 +10,7 @@ description: How I added an invitation solution to the built in rails 8 authenti
 ---
 
 # Introduction
-I'm launching *Artifacts,* an LLM chat application designed to accelerate creative work through pre-defined prompts called *Stencils.* But what I do not want to deal with is uncontrollable user sign ups, so I thought the solution to implement would be an invitation system.
+I'm soon deploying *Artifacts,* an LLM chat application designed to accelerate creative work through pre-defined prompts called *Stencils.* But what I do not want to deal with is uncontrollable user sign ups, so I thought the solution to implement would be an invitation system.
 
 ## Problem
 Allowing open registrations for *Artifacts* would lead to a flood of database writes, likely overwhelming a small virtual server, especially with limited RAM. Beyond infrastructure, I'd face the complex task of batching chat interactions and persisting them efficiently; a significant development overhead I prefer to sidestep. My core goal is to provide flexible LLM access, and an invitation system offers a clean solution to these scaling and complexity concerns.
@@ -229,4 +229,4 @@ Using `resources :invites` automatically sets up the necessary RESTful paths, ma
 
 ## Conclusion
 
-This invitation system for "Artifacts" addresses the requirements that I need which is controlled user sign ups. The implementation delivers admin oversight and a smooth, guided entry for new users, allowing "Artifacts" to grow deliberately while ensuring resource stability.
+This invitation system for *Artifacts* addresses the requirements that I need which is controlled user sign ups. The implementation delivers admin oversight and a smooth, guided entry for new users, allowing *Artifacts* to grow deliberately while ensuring resource stability.
