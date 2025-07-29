@@ -4,55 +4,28 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hello 👋, I'm Michael, a passionate software developer based in Toronto. Currently, I am enhancing my skills in full-stack web development through _The Odin Project_.
+Hello, I'm Michael, a software developer, building products from concept to production.
 
-## Philosophy 🚀
+My background in Economics gives me a unique perspective on development. I'm driven to understand the 'why' behind the 'what', ensuring that the features I build are not just technically sound but also deliver real business value. I believe in end-to-end ownership: taking an idea, architecting a solution, and shipping a polished, production-ready application.
 
-I am continually evolving and learning every day. For now, here's my philosophy:
+## Select Projects
 
-- **Efficiently solving valuable problems** is my priority, focusing on results over details.
+Here are a few of the projects I've built and contributed to:
 
-## Projects Showcase 🛠️
+- **[stencil-ai.xyz](https://stencil-ai.xyz)**: A deployed LLM workflow platform for concurrent, real-time analysis. I built this from the ground up using Ruby on Rails, Hotwire, and deployed it with Kamal.
+- **[Open Router Usage Tracker](https://rubygems.org/gems/open_router_usage_tracker)**: A Rails Engine for multi-provider LLM cost tracking and rate-limiting, downloaded over 400 times. You can find the source on [GitHub](https://github.com/MclPio/open_router_usage_tracker).
+- **[Tunacode (Contribution)](https://github.com/MclPio/tunacode)**: Contributed a Python-based cost and usage tracking module to a CLI coding agent, implementing a modular, test-driven architecture.
 
-Here are some of the projects I've worked on:
+## Technical Skills
 
-- [Odinbook](https://github.com/MclPio/odinbook)
-- [Weather App](https://github.com/MclPio/weather-app)
-- [Odin Flight Booker](https://github.com/MclPio/odin-flight-booker)
-- [Calendar Analytics](https://github.com/calendar-analytics/calendar-analytics) **<IN PROGRESS!>**
+My toolbox is always growing. Here are some of the technologies I'm proficient in:
 
-## Skills and Technologies 💻
+- **Languages:** Ruby, JavaScript, Python, SQL, HTML, CSS
+- **Backend:** Ruby on Rails, PostgreSQL, SolidQueue, Action Cable, Minitest, Pytest
+- **Frontend:** React, Hotwire (Turbo/Stimulus), Jest, Tailwind CSS/DaisyUI
+- **Infrastructure & DevOps:** Docker, Kamal, Git, AWS S3, Fly.io, RubyGems
 
-### Languages 🌐
+## Education
 
-- Ruby 💎
-- SQL 📊
-- JavaScript 🌐
-- Python 🐍
-
-### Tools 🛠️
-
-- Git 🌳
-- Visual Studio Code 🧑‍💻
-- Fly.io 🎈
-- Bash 🐚
-- Rspec 🛡️
-- Capybara 🕷️
-
-### Frontend 🎨
-
-- HTML 📝
-- CSS 🎨
-- Bootstrap 🅱️
-- Bulma CSS 📚
-- Hotwire Turbo and Stimulus ⚡
-
-### Backend 🖥️
-
-- Ruby on Rails 🛤️
-- PostgreSQL 🐘
-
-## Education 📚
-
-- **B.A. Economics**, York University
-- **FullStack Development**, The Odin Project
+- **York University** - BA, Financial and Business Economics (Dean's Honour Roll)
+- **Independent Study** - Comprehensive Full-Stack Development (The Odin Project Curriculum)
