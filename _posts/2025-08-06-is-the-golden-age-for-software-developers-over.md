@@ -77,9 +77,9 @@ This isn't just advice on how to get a job. It's a strategy for becoming a bette
 
 The data reveals a software development job market that has undergone a significant contraction since the boom of 2020-2021, driven by macroeconomic shifts and the industry-wide adoption of AI. For early-career developers, this new landscape demands more than just a polished resume; it requires a proactive and strategic approach to skill-building and career development. By focusing on tangible accomplishments through open source and personal projects, developers can build a compelling portfolio that stands out in any market.
 
-## Join the Discussion
+<!-- ## Join the Discussion
 
-What are your thoughts on the current job market? What strategies have you found effective? Share your experiences and insights in the comments below.
+What are your thoughts on the current job market? What strategies have you found effective? Share your experiences and insights in the comments below. -->
 
 ## Credits and Further Reading
 
