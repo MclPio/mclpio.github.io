@@ -34,7 +34,9 @@ While this statistical correlation is evident, it's important to note that corre
 1.  **The Boom (2020-2022):** During the period of near-zero interest rates, software development job postings surged, indicating a period of rapid growth in the tech sector.
 2.  **The Cooldown (2022-Present):** As the Bank of Canada began to raise interest rates, job postings declined significantly. Interestingly, the recent stabilization and slight decrease in interest rates in 2024 and 2025 have not yet triggered a corresponding boom in hiring, suggesting there may be a lag effect or other economic factors at play.
 
-
+> From personal experience, many say that AI and high-interest-rate environments helped to build leaner teams, so the new roles that open may not be entry-level. This is due to the potential for increased productivity that AI brings to developer workflows. For example, if you are building a common feature like a dashboard, a coding tool like [Gemini-CLI](https://github.com/google-gemini/gemini-cli) or the ever-evolving [tunacode](https://github.com/alchemiststudiosDOTai/tunacode) can dramatically speed up the process. There are tons of approaches to avoid re-solving old problems, which brings immense efficiency to a business.
+>
+> *Perhaps the next data analysis should measure the correlation between tech job postings and the adoption of AI developer tools; it might be as revealing as the interest rate correlation.*
 
 ### A Global Phenomenon
 
@@ -59,20 +61,23 @@ This chart shows the monthly trend for Canadian software development job posting
 
 The key takeaway is that **job seekers should focus on being consistently prepared and active, rather than trying to time their job search to a specific season that may or may not materialize.**
 
-## How to Adapt and Succeed
+## So, What Can We Actually Do?
 
-The data shows a more competitive market, but it doesn't mean opportunities are gone. It means your strategy needs to be more deliberate. Here’s how to adapt:
+Let's be honest. Standard advice like "network more" or "apply to non-tech companies" can feel hollow in a market this tight. If you're a career-switcher , self taught, a recent bootcamp grad, or just trying to land your first role, the reality is brutal. You search for an "entry-level [insert your stack] developer" and find fifty results: twenty-five are irrelevant, twenty-four are for senior or staff engineers, and maybe one is a genuine junior role that still asks for three years of experience that could potentially ask for different requirements.
 
-*   **Expand Your Search Strategically:** The global cooldown is most intense for remote roles at famous tech companies. This is an opportunity. By targeting local companies, non-tech industries, or hybrid roles, you strategically remove yourself from the most saturated parts of the market and significantly increase your odds.
-*   **Build Connections Through Curiosity:** Forget transactional networking. Instead, connect with people to learn. Ask developers or hiring managers for 15 minutes of their time to hear about their work and challenges. Genuine curiosity leads to memorable conversations, and those conversations lead to advocates who will think of you when opportunities arise.
-*   **Gain Practical Experience in the Open:** Contributing to open-source projects is one of the best ways to gain practical experience. It's a chance to learn from others, work on a real-world codebase, and even explore new technologies, like the AI tools that are reshaping our industry. It’s a direct way to show a future employer you can be effective from day one.
-*   **Build Projects That Solve a Real Problem:** To stand out, build a project that solves a problem you genuinely care about. Focus on a small, achievable scope—a true Minimum Viable Product (MVP)—rather than getting lost in features. This demonstrates not just your technical skills but also your product sense and ability to deliver, which is far more valuable than another tutorial clone.
+I'm in the same boat, and I'm not in a position to offer a guaranteed formula for getting hired. The market is what it is. So, what can we do? The only path I see is to shift our focus from *applying for jobs* to *building undeniable proof of our skills*. If the front door is closed, maybe we can build our own. For me, that boils down to two things:
 
-Many of these strategies are echoed and expanded upon by Gergely Orosz in his [excellent post on the topic](https://blog.pragmaticengineer.com/advice-for-junior-software-engineers/). I highly recommend reading it for a deeper dive.
+*   **Contribute to Open Source:** This is about more than just "gaining experience." It's about creating public evidence of your ability to work in a real-world codebase. Find a project you find interesting. I worked on one issue for [tunacode](https://github.com/alchemiststudiosDOTai/tunacode) that was similar to my [ruby gem](https://rubygems.org/gems/open_router_usage_tracker). I learned to read others' code and integrate a new feature in a Python environment. Now I have tangible proof of my AI integration experience. That's more valuable than a line on a resume.
+
+*   **Build Your Own Thing:** Stop waiting for a company to give you a chance to build something. Give it to yourself. Create a small SaaS or a project that solves a problem you actually have. Build a true Minimum Viable Product (MVP). The goal isn't to become a unicorn founder overnight; it's to prove you can take an idea from zero to one. It shows product sense, initiative, and technical skill. In a world where it's easier than ever to build, be a builder.
+
+This isn't advice on how to get a job. It's a strategy for how to become a better developer while the market figures itself out. It's all we can really control.
+
+For a deep dive, and if you want to learn the basics, I highly recommend reading this [post](https://blog.pragmaticengineer.com/advice-for-junior-software-engineers/) from *The Pragmatic Engineer Blog*
 
 ## Conclusion
 
-The data reveals a software development job market that has undergone a significant shift since the boom of 2020-2021. The market is now in a period of contraction, coinciding with major shifts in macroeconomic factors. For early-career developers, this means that a strategic and proactive approach to the job search is more important than ever.
+The data reveals a software development job market that has undergone a significant shift since the boom of 2020-2021. The market is now in a period of contraction, coinciding with major shifts in macroeconomic factors and the industry-wide adoption of AI. For early-career developers, this means that a strategic and proactive approach to the job search is more important than ever.
 
 ## Credits and Further Reading
 
