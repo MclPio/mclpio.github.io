@@ -11,7 +11,7 @@ tags:
 description: An analysis of recent job posting data to understand the trends shaping the software developer job market and strategies for early-career developers.
 ---
 
-# What Five Years of Job Data Tells Us About the Developer Market
+# The Developer Job Market
 
 As a developer navigating this market, I wanted to move beyond the headlines and understand the trends shaping our industry. This post explores three key questions using five years of hiring data (February 2020 - July 2025):
 
@@ -19,13 +19,13 @@ As a developer navigating this market, I wanted to move beyond the headlines and
 2.  **Is there a "hiring season" to aim for?** We'll examine the data for seasonality to see if timing your applications makes a difference.
 3.  **What can we do to succeed?** We'll outline practical strategies for navigating a competitive environment.
 
-## The Evidence: A Five-Year Trend of the Job Market
+## A Five-Year Trend of the Job Market
 
 To understand where the industry stands, we'll analyze job posting data from Indeed's Hiring Lab and interest rate data from the Bank of Canada, focusing on the period from February 2020 to July 2025.
 
 ### The Big Picture: The Post-Pandemic Boom and Bust
 
-A statistical analysis of the data reveals a moderate to strong negative correlation (r = -0.55) between the Bank of Canada's interest rate and software development job postings, suggesting a significant relationship between the two trends.
+A statistical analysis of the data reveals a moderate negative correlation (r = -0.55) between the Bank of Canada's interest rate and software development job postings during this period.
 
 <img src="/assets/img/2025-08-06-job-market-analysis/CA_trend_with_interest_rates.png" alt="Canadian Software Job Postings vs. Bank of Canada Interest Rate">
 
@@ -34,13 +34,13 @@ While this statistical correlation is evident, it's important to note that corre
 1.  **The Boom (2020-2022):** During the period of near-zero interest rates, software development job postings surged, indicating a period of rapid growth in the tech sector.
 2.  **The Cooldown (2022-Present):** As the Bank of Canada began to raise interest rates, job postings declined significantly. Interestingly, the recent stabilization and slight decrease in interest rates in 2024 and 2025 have not yet triggered a corresponding boom in hiring, suggesting there may be a lag effect or other economic factors at play.
 
-> From personal experience, many say that AI and high-interest-rate environments helped to build leaner teams, so the new roles that open may not be entry-level. This is due to the potential for increased productivity that AI brings to developer workflows. For example, if you are building a common feature like a dashboard, a coding tool like [Gemini-CLI](https://github.com/google-gemini/gemini-cli) or the ever-evolving [tunacode](https://github.com/alchemiststudiosDOTai/tunacode) can dramatically speed up the process. There are tons of approaches to avoid re-solving old problems, which brings immense efficiency to a business.
+> From personal experience, many say that AI and high-interest-rate environments helped to build leaner teams. This is due to the potential for increased productivity that AI brings to developer workflows. For example, if you are building a common feature like a dashboard, a coding tool like [Gemini-CLI](https://github.com/google-gemini/gemini-cli) or the ever-evolving [tunacode](https://github.com/alchemiststudiosDOTai/tunacode) can dramatically speed up the process. There are tons of approaches to avoid re-solving old problems, which brings immense efficiency to a business.
 >
 > *Perhaps the next data analysis should measure the correlation between tech job postings and the adoption of AI developer tools; it might be as revealing as the interest rate correlation.*
 
 ### A Global Phenomenon
 
-This trend is not unique to Canada. Similar patterns of a post-2022 cooldown in software development hiring are visible in the data for the US, UK, Germany, and other developed countries, pointing to the influence of global macroeconomic factors rather than local market issues.
+This trend is not unique to Canada. Similar patterns of a post-2022 cooldown in software development hiring are visible in the data globally, pointing to the influence of global macroeconomic factors rather than local market issues.
 
 <img src="/assets/img/2025-08-06-job-market-analysis/US_trend.png" alt="Software Development Job Postings Trend in US">
 <img src="/assets/img/2025-08-06-job-market-analysis/AU_trend.png" alt="Software Development Job Postings Trend in AU">
@@ -50,7 +50,7 @@ This trend is not unique to Canada. Similar patterns of a post-2022 cooldown in 
 
 ### Does Seasonality Matter in the Current Market?
 
-Job seekers often wonder if there's a "best time of year" to apply. We can examine the recent data for seasonal patterns, but it's crucial to interpret it within the context of the larger economic climate.
+I wondered if it is true that Hiring picks up during September to October.
 
 <img src="/assets/img/2025-08-06-job-market-analysis/CA_monthly_trends_by_year.png" alt="Software Development Job Postings by Month in Canada">
 
@@ -71,11 +71,11 @@ When faced with this reality, what can we do? The most effective path forward is
 
 *   **Build Your Own Thing:** Be a builder. Create your own SaaS application from the ground up. Focus on delivering a Minimum Viable Product (MVP) without getting bogged down by feature creep. Use the project as a learning opportunity, a way to attract real users, and potentially even generate revenue. With modern AI tooling, building features that once took days can now be done in hours, making it easier than ever to launch your own products.
 
-This isn't just advice on how to get a job. It's a strategy for becoming a better, more resilient developer while the market finds its footing. It's about focusing on what we can control: our skills and our creations.
+So while the market tries to find its footing, we can work to become better developers and focus on what we can control: our skills and our creations.
 
 ## Conclusion
 
-The data reveals a software development job market that has undergone a significant contraction since the boom of 2020-2021, driven by macroeconomic shifts and the industry-wide adoption of AI. For early-career developers, this new landscape doesn't just demand a polished resume; it demands undeniable proof of skill. The hard truth is that in a market this competitive, standing out isn't just an advantage; it's a prerequisite for survival. Focusing on tangible accomplishments through open source and personal projects is no longer optional; it's the most pragmatic strategy for building a career that can weather this storm.
+The data reveals a software development job market that has undergone a significant contraction since the boom of 2020-2021, driven by macroeconomic shifts and the industry wide adoption of AI. For early-career developers, this new landscape doesn't just demand a polished resume; it demands undeniable proof of skill. The hard truth is that in a market this competitive, standing out isn't just an advantage; it's a prerequisite for survival. Focusing on tangible accomplishments through open source and personal projects is no longer optional; it's the most pragmatic strategy for building a career that can weather this storm.
 
 <!-- ## Join the Discussion
 
