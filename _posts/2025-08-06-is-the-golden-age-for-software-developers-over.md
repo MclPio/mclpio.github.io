@@ -75,7 +75,7 @@ This isn't just advice on how to get a job. It's a strategy for becoming a bette
 
 ## Conclusion
 
-The data reveals a software development job market that has undergone a significant contraction since the boom of 2020-2021, driven by macroeconomic shifts and the industry-wide adoption of AI. For early-career developers, this new landscape doesn't just demand a polished resume; it demands undeniable proof of skill. The hard truth is that in a market this competitive, standing out isn't just an advantage—it's a prerequisite for survival. Focusing on tangible accomplishments through open source and personal projects is no longer optional; it's the most pragmatic strategy for building a career that can weather this storm.
+The data reveals a software development job market that has undergone a significant contraction since the boom of 2020-2021, driven by macroeconomic shifts and the industry-wide adoption of AI. For early-career developers, this new landscape doesn't just demand a polished resume; it demands undeniable proof of skill. The hard truth is that in a market this competitive, standing out isn't just an advantage; it's a prerequisite for survival. Focusing on tangible accomplishments through open source and personal projects is no longer optional; it's the most pragmatic strategy for building a career that can weather this storm.
 
 <!-- ## Join the Discussion
 
