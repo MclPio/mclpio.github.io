@@ -1,0 +1,212 @@
+/* Variables */
+:root {
+  --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  --case-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(0,0,0,0.2);
+  --dial-color: #f4f4f4;
+  --hand-color: #222;
+  --second-hand-color: #8b0000;
+}
+
+.watch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  background: #111; /* Dark background for contrast */
+  min-height: 600px;
+}
+
+/* Watch Case */
+.watch-case {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  box-shadow: var(--case-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Bezel */
+.watch-bezel {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #e6cfa5, #d4af37);
+}
+
+/* Crystal (Glass Reflection) */
+.watch-crystal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.1) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Dial */
+.watch-dial {
+  position: relative;
+  width: 85%;
+  height: 85%;
+  background: var(--dial-color);
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Typography */
+.brand-text {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.complication-text {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.6rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Markers */
+.marker {
+  position: absolute;
+  font-family: 'Bodoni Moda', 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.twelve { top: 5%; left: 50%; transform: translateX(-50%); }
+.six { bottom: 5%; left: 50%; transform: translateX(-50%); }
+.three { right: 5%; top: 50%; transform: translateY(-50%); }
+.nine { left: 5%; top: 50%; transform: translateY(-50%); }
+
+/* Hands */
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background: var(--hand-color);
+  border-radius: 50% 50% 0 0;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  z-index: 2;
+  transition: transform 0.1s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+
+.hour-hand {
+  width: 6px;
+  height: 25%;
+  background: #222;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 38%;
+  background: #222;
+}
+
+.second-hand {
+  width: 2px;
+  height: 42%;
+  background: var(--second-hand-color);
+  z-index: 3;
+}
+
+.second-hand::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--second-hand-color);
+}
+
+.center-cap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Slide Button (Repeater Trigger) */
+.slide-btn {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: #222;
+  border-radius: 25px;
+  border: 2px solid #444;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.slide-btn:hover {
+  border-color: #666;
+}
+
+.slide-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(212,175,55,0.2) 0%, rgba(0,0,0,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slide-btn:active .slide-track {
+  opacity: 1;
+}
+
+.slide-label {
+  color: #d4af37;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+.slide-thumb {
+  display: none; /* Simplified for now, just a click button */
+}
+
+.slide-btn.active {
+  background: #333;
+  transform: scale(0.98);
+}
