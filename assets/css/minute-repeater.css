@@ -1,76 +1,155 @@
 /* Variables */
 :root {
-  --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
-  --case-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(0,0,0,0.2);
-  --dial-color: #f4f4f4;
-  --hand-color: #222;
-  --second-hand-color: #8b0000;
+  --case-gradient: linear-gradient(135deg, #e0e0e0, #ffffff, #c0c0c0);
+  --case-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,255,255,0.5);
+  --dial-color: #f0f4f8;
+  --hand-color: #003366; /* Heat-blued steel */
+  --second-hand-color: #003366;
+  --marker-color: #a0a0a0; /* Silver */
 }
 
-.watch-container {
+/* Modal/Panel Styles */
+.mr-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  height: auto;
+  background: transparent;
+  z-index: 2000;
+  display: none; /* Toggled by button */
+  /* No backdrop, no full screen */
+}
+
+.mr-modal-content {
+  position: relative;
+  animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mr-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 20;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
-  background: #111; /* Dark background for contrast */
-  min-height: 600px;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Watch Case */
+.mr-close-btn:hover {
+  opacity: 1;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Watch Case - Draggable */
 .watch-case {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px; /* Compact size */
+  height: 280px;
   border-radius: 50%;
-  background: var(--gold-gradient);
+  background: var(--case-gradient);
   box-shadow: var(--case-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  cursor: grab; /* Draggable cursor */
+}
+
+.watch-case:active {
+  cursor: grabbing;
+}
+
+/* Integrated Slide Trigger */
+.repeater-slide-container {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 70px;
+  background: linear-gradient(90deg, #ccc, #eee);
+  border-radius: 8px 0 0 8px;
+  z-index: 5;
+  box-shadow: -1px 0 3px rgba(0,0,0,0.2);
+}
+
+.repeater-slide {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 14px;
+  height: 25px;
+  background: linear-gradient(135deg, #e0e0e0, #fff);
+  border-radius: 6px 0 0 6px;
+  cursor: pointer;
+  transition: top 0.2s ease-out;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,1), 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.repeater-slide.active {
+  top: 40px;
+  transition: top 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Bezel */
 .watch-bezel {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 94%;
+  height: 94%;
   border-radius: 50%;
-  border: 2px solid rgba(0,0,0,0.1);
-  background: linear-gradient(135deg, #e6cfa5, #d4af37);
+  border: 1px solid rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #f5f5f5, #dcdcdc);
 }
 
-/* Crystal (Glass Reflection) */
+/* Crystal */
 .watch-crystal {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.2) 100%);
   z-index: 10;
   pointer-events: none;
 }
 
-/* Dial */
+/* Dial - Omiwatari (Ice Texture) */
 .watch-dial {
   position: relative;
-  width: 85%;
-  height: 85%;
-  background: var(--dial-color);
+  width: 88%;
+  height: 88%;
+  background-color: var(--dial-color);
+  /* Ice Texture */
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.5) 2px, rgba(255,255,255,0.5) 4px),
+    repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(200,210,230,0.1) 2px, rgba(200,210,230,0.1) 4px);
   border-radius: 50%;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
   z-index: 1;
+  overflow: hidden;
 }
 
 /* Typography */
 .brand-text {
   position: absolute;
-  top: 25%;
+  top: 28%;
   width: 100%;
   text-align: center;
   font-family: 'Times New Roman', serif;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   color: #333;
   text-transform: uppercase;
@@ -78,30 +157,51 @@
 
 .complication-text {
   position: absolute;
-  bottom: 25%;
+  bottom: 28%;
   width: 100%;
   text-align: center;
   font-family: 'Times New Roman', serif;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-style: italic;
   color: #666;
 }
 
-/* Markers */
-.marker {
+/* Markers - Generated via JS */
+.dial-marker {
   position: absolute;
-  font-family: 'Bodoni Moda', 'Times New Roman', serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #111;
+  top: 0;
+  left: 50%;
+  transform-origin: 50% 123.2px; /* Radius of dial (280 * 0.88 / 2) = 123.2 */
+  /* Actually we need to position them at the edge. Better to use top/left 50% and transform translate/rotate */
 }
 
-.twelve { top: 5%; left: 50%; transform: translateX(-50%); }
-.six { bottom: 5%; left: 50%; transform: translateX(-50%); }
-.three { right: 5%; top: 50%; transform: translateY(-50%); }
-.nine { left: 5%; top: 50%; transform: translateY(-50%); }
+.hour-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 12px;
+  background: linear-gradient(to right, #ccc, #fff, #999);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  /* Transform set in JS */
+}
 
-/* Hands */
+.hour-marker.twelve-marker {
+  width: 8px; /* Double baton */
+  background: repeating-linear-gradient(90deg, #ccc, #fff 2px, #999 4px);
+}
+
+.minute-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 6px;
+  background: #333; /* Black tick */
+  /* Transform set in JS */
+}
+
+/* Hands - Heat Blued Steel */
 .hand {
   position: absolute;
   bottom: 50%;
@@ -109,38 +209,39 @@
   transform-origin: bottom center;
   background: var(--hand-color);
   border-radius: 50% 50% 0 0;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   z-index: 2;
-  transition: transform 0.1s cubic-bezier(0.4, 2.08, 0.55, 0.44);
 }
 
 .hour-hand {
-  width: 6px;
-  height: 25%;
-  background: #222;
+  width: 5px;
+  height: 28%;
+  /* Dauphine shape approximation */
+  clip-path: polygon(50% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
 .minute-hand {
   width: 4px;
-  height: 38%;
-  background: #222;
+  height: 42%;
+  clip-path: polygon(50% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 .second-hand {
-  width: 2px;
-  height: 42%;
+  width: 1px;
+  height: 45%;
   background: var(--second-hand-color);
   z-index: 3;
+  box-shadow: none;
 }
 
 .second-hand::after {
   content: '';
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 4px;
-  height: 20px;
+  width: 2px;
+  height: 15px;
   background: var(--second-hand-color);
 }
 
@@ -148,65 +249,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 10px;
-  height: 10px;
-  background: var(--gold-gradient);
+  width: 6px;
+  height: 6px;
+  background: #e0e0e0;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-/* Slide Button (Repeater Trigger) */
-.slide-btn {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  background: #222;
-  border-radius: 25px;
-  border: 2px solid #444;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.slide-btn:hover {
-  border-color: #666;
-}
-
-.slide-track {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(212,175,55,0.2) 0%, rgba(0,0,0,0) 100%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.slide-btn:active .slide-track {
-  opacity: 1;
-}
-
-.slide-label {
-  color: #d4af37;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  z-index: 2;
-}
-
-.slide-thumb {
-  display: none; /* Simplified for now, just a click button */
-}
-
-.slide-btn.active {
-  background: #333;
-  transform: scale(0.98);
+.watch-controls {
+  display: none; /* Hidden for clean look */
 }

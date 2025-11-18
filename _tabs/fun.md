@@ -8,7 +8,7 @@ Welcome to the Fun section! Here I'll share some non-coding related hobbies, pho
 
 ## Interactive
 
-- **[Minute Repeater Watch](/fun/minute-repeater/)**: A digital recreation of a minute repeater complication using the Web Audio API.
+- **<a href="#" onclick="document.getElementById('minute-repeater-modal').style.display='flex'; return false;">Minute Repeater Watch</a>**: A digital recreation of a minute repeater complication. Click to open the watch.
 
 ## Photography
 
