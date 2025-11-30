@@ -17,7 +17,7 @@ description: A comprehensive framework guiding product builders from initial hyp
 
 ## Introduction
 
-Making a good product that delights users requires a clear map. This framework will guide you from **Hypothesis (A) to Market Success (Z)**. We'll cover **The Why** (Psychology), **The How** (The Journey), and **The Must Dos** (The Principles).
+Making a good product that delights users requires a clear path. This framework will guide you from **Hypothesis (A) to Market Success (Z)**. We'll cover **The Why** (Psychology), **The How** (The Journey), and **The Must Dos** (The Principles).
 
 ## Psychology
 
@@ -35,7 +35,7 @@ In your product development process, embracing "Psychographic Primacy" means you
 
 ### Demographics
 
-Demographics are like the ‘address’ to reach your users which have a psychological mindset. They will help you make informed decisions about the marketing channels to use, product pricing; they are quantifiable.
+Demographics are similar to finding the ‘address’ to reach your users which have a psychological mindset. They will help you make informed decisions about the marketing channels to use, product pricing; they are quantifiable and are to be be used alongside the user's psycographic profile.
 
 ## Journey
 
@@ -43,7 +43,7 @@ The User Journey is the realization of the **Psychographic Contract**. Every pha
 
 ### Phase A: Discovery (The Hook)
 
-Where do your customers come from? You must identify appropriate marketing **channels**, what **content** to deliver, and finally **the hook** that compels them to check out your product.
+Where do your users come from? You must identify appropriate marketing **channels**, what **content** to deliver, and finally **the hook** that compels them to check your product.
 
 ### Phase B: Consideration (The Friction Test)
 
@@ -55,7 +55,7 @@ The purchase itself is the **first moment of delight**. If the transaction requi
 
 ### Phase D: The Activation (Invisible Installation)
 
-Whenever a user installs or uses the product, the activation must be **seamless**; they must feel powerful, not helpless. If your product is technical…for example, an iOS app; this means seamless installation to overcome platform friction.
+Whenever a user installs or uses your product, the activation must be **seamless**; they must feel powerful, not helpless. As an example, if your product is a todo list, you better not have me configure a dozen settings before I can get to making one simple todo. Keep the complexity away from initial use.
 
 ### Phase E: Social Signaling (The Retention Loop)
 
@@ -71,10 +71,10 @@ A few principles I want to write down:
 
     We adopt the philosophy that the Minimum Viable Product must be a **complete, high quality, smaller product** (a tricycle), not a half functional version of the end goal (a car).
 
-2. **The Broken Window Theory (The Quality Bar).** The product will be as good as the **worst user experience**. If a user notices a typo or a visual glitch, it will bring down the whole reputation of your product, even if that typo is the only thing wrong with your product.
+2. **The Broken Window Theory (The Quality Bar).** The product will be as good as the **worst user experience**. If a user notices a typo or a visual glitch, it will bring down the whole reputation of your product, even if that typo is the only thing wrong with it.
 3. **Mission First.** You must aim high, even if you do not know exactly how you will get there. You can, at the very least, plan your first few steps. Now, for every feature, you must consider: **Does this get me closer to the mission?** If not, discard it and move on.
 4. **Subtraction is Improvement.** You are not serious if you think adding another feature will make your product stand out. It is all about the core; if no one likes the core, who cares about the extra bells and whistles? We actively look for ways to **simplify** the product.
-5. **Data Informed Iteration.** Be **data informed** (use data as context) but also rely on your judgment, intuition, and direct conversations with your users.
+5. **Data Informed Iteration.** Be **data informed** (use data as context, and as early as possible in your journey) but also rely on your judgment, intuition, and direct conversations with your users.
 
 ## To End
 
@@ -84,4 +84,4 @@ Go on then, **BUILD**. The world is what you imagine it to be.
 
 ### Acknowledgements
 
-The powerful concepts of the **Tricycle MVP** and **The Broken Window Theory** are notable principles widely shared in the product community and are codified in documents such as the [Shopify Product Principles](https://www.shopify.com/careers/product-principles).
+The concepts of the **Tricycle MVP** and **The Broken Window Theory** are notable principles widely shared in the product community and are codified in documents such as the [Shopify Product Principles](https://www.shopify.com/careers/product-principles).
