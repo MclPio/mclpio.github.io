@@ -78,7 +78,7 @@ A few principles I want to write down:
 
 ## To End
 
-This framework is your **Product** **Compass**. It provides the structure to turn an abstract idea into a high quality, focused, and sticky product. We introduced market segmentation through **Psychological Primacy** so you can identify, think, and plan your user’s journey. The journey itself must be **frictionless** in every stage, from discovery to the social signaling loop. Finally, we top it off with strong principles to keep you on track: Optimize your MVP, maintain an obsessively high quality bar, stick to the mission, embrace subtraction, and iterate with wisdom.
+This framework is your **Product** **Compass**. It provides the structure to turn an abstract idea into a high quality, focused, and sticky product. We introduced market segmentation through **Psychological Primacy** so you can identify, think, and plan your user’s journey. The journey itself must be **frictionless** in every stage, from discovery to the social signaling loop. Finally, we top it off with strong principles to keep you on track: Optimize your MVP, maintain an obsessively high quality bar, stick to the mission, embrace subtraction, and iterate.
 
 Go on then, **BUILD**. The world is what you imagine it to be.
 
