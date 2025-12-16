@@ -12,7 +12,7 @@ My background in Economics gives me a unique perspective on development. I'm dri
 
 Here are a few of the projects I've built and contributed to:
 
-- **[stencil-ai.xyz](https://stencil-ai.xyz)**: A deployed LLM workflow platform for concurrent, real-time analysis. I built this from the ground up using Ruby on Rails, Hotwire, and deployed it with Kamal.
+- **[stencil-ai](https://github.com/MclPio/stencil-ai)**: An LLM workflow platform for concurrent. I built this from the ground up using Ruby on Rails, Hotwire, and deployed it with Kamal.
 - **[Open Router Usage Tracker](https://rubygems.org/gems/open_router_usage_tracker)**: A Rails Engine for multi-provider LLM cost tracking and rate-limiting, downloaded over 400 times. You can find the source on [GitHub](https://github.com/MclPio/open_router_usage_tracker).
 - **[Tunacode (Contribution)](https://github.com/alchemiststudiosDOTai/tunacode/pull/45)**: Contributed a Python-based cost and usage tracking module to a CLI coding agent, implementing a modular, test-driven architecture.
 
@@ -20,7 +20,7 @@ Here are a few of the projects I've built and contributed to:
 
 My toolbox is always growing. Here are some of the technologies I'm proficient in:
 
-- **Languages:** Ruby, JavaScript, Python, SQL, HTML, CSS
+- **Languages:** Ruby, JavaScript, Python, SQL, HTML, CSS, Swift(NEW... learning iOS development)
 - **Backend:** Ruby on Rails, PostgreSQL, SolidQueue, Action Cable, Minitest, Pytest
 - **Frontend:** React, Hotwire (Turbo/Stimulus), Jest, Tailwind CSS/DaisyUI
 - **Infrastructure & DevOps:** Docker, Kamal, Git, AWS S3, Fly.io, RubyGems
