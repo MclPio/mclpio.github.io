@@ -12,4 +12,8 @@ Welcome to the Fun section! Here I'll share some non-coding related hobbies, pho
 
 ## Photography
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199703898@N03/albums/72177720330637587" title="init album"><img src="https://live.staticflickr.com/65535/54956564095_94350258d3_h.jpg?s&#x3D;eyJpIjo1NDk1NjU2NDA5NSwiZSI6MTc2NDU1OTA3MiwicyI6IjVmNTlkMzUzM2FjNmY0NjliMWM3ZjY1NmU4OWUyNmI3MjBiYmZlMjIiLCJ2IjoxfQ" width="1600" height="1200" alt="init album"/></a>
+<a href="https://www.flickr.com/photos/199703898@N03/albums/72177720330637587" title="Photography album on Flickr" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; max-width: 100%;">
+  <span aria-label="Photography album cover" role="img" style="display: block; width: 100%; aspect-ratio: 4 / 3; background-image: url('/assets/img/photography_image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 0.75rem;"></span>
+</a>
+
+Click the image to view the full album on Flickr.
