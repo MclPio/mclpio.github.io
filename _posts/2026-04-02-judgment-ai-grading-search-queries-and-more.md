@@ -14,7 +14,7 @@ description: I built an LLM judgement tool to grade query result pairs
 
 After reading an article that used experts to judge the quality of search results, I realized I could build an LLM pipeline that can do that, well almost. In this post, I will introduce [`judgement-ai`](https://github.com/MclPio/judgement-ai), a tool I made in 2 days, and the challenge of validation.
 
-## What Was the Problem?
+## what was the problem?
 
 When you search for a product on any ecommerce site, there are thousands of items that match, and multiple processes connect together in order to get the top N items back.
 
@@ -22,17 +22,17 @@ I will focus on one step: tuning the top N items that a user sees. For example, 
 
 Having the most relevant item at the top matters. Get this wrong and you lose credibility for having a bad search engine.
 
-## How Search Quality is Measured
+## how search quality is measured
 
 When a search query runs, two things matter: did we get back enough relevant results (recall), and are the right results at the top (precision). Getting those two things right is hard, and knowing whether you have gotten them right requires a way to measure it.
 
 That is where NDCG (Normalized Discounted Cumulative Gain) comes in. It scores your ranked results by asking: are the most relevant items appearing first? A score of 1.0 means perfect ordering, and anything lower means relevant results are being buried. The catch is that to calculate NDCG, you need someone to first label how relevant each result is for a given query and that is traditionally done by human experts.
 
-## What judgement-ai Does
+## what judgement-ai does
 
 [`judgement-ai`](https://github.com/MclPio/judgement-ai) is a grading pipeline for query result pairs. You give it queries and search results, point it at an LLM, and it assigns relevance scores that can be written to JSON or Quepid CSV for downstream evaluation and tuning. It also supports incremental writes, resume, and failure logging. But is it any good?
 
-## Validation: Is It Any Good?
+## validation: is it any good?
 
 This is the hard part. It is easy to engineer a benchmark that "passes" if you manipulate your data hard enough, so I tried to be objective.
 
@@ -68,7 +68,7 @@ The human labels were evenly distributed by design: 50 per category, since I sam
 
 One more thing worth calling out: using Spearman correlation here was probably a mistake. Spearman assumes the scores have a clean ordinal relationship, that 3 is strictly better than 2, which is better than 1, and so on. But ESCI labels are not really a relevance ladder: Substitute and Complement do not have an obvious ordering between them. Is a Substitute more relevant than a Complement? It depends entirely on context. So Spearman was likely penalizing the model for disagreements that do not actually matter. Exact agreement is probably best metric here and at 42.5% for local and 47% for GPT-5.4, there is clearly still work to do.
 
-## What's Next
+## what's next
 
 Three things I want to do next.
 
@@ -78,7 +78,7 @@ Three things I want to do next.
 
 **Finding a use case**: If you are working on improving your search engine results, it may be worth [trying the tool now](https://github.com/MclPio/judgement-ai). It is just a pipeline between your data and an LLM. I also want to explore whether this goes beyond search: can the same approach grade other kinds of text? Prompt effectiveness, content quality, recommendation relevance?
 
-## Resources
+## resources
 
 - [Fullscript Builder Blog — Developing a Modern Search Stack](https://builders.fullscript.com/posts/developing-a-modern-search-stack-an-overview)
 - Reddy et al. (2022). *Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search.* [arXiv:2206.06588](https://arxiv.org/abs/2206.06588)
