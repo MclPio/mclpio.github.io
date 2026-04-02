@@ -32,7 +32,7 @@ That is where NDCG (Normalized Discounted Cumulative Gain) comes in. It scores y
 
 [`judgement-ai`](https://github.com/MclPio/judgement-ai) is a grading pipeline for query result pairs. You give it queries and search results, point it at an LLM, and it assigns relevance scores that can be written to JSON or Quepid CSV for downstream evaluation and tuning. It also supports incremental writes, resume, and failure logging. But is it any good?
 
-## Validations — Is It Any Good?
+## Validation: Is It Any Good?
 
 This is the hard part. It is easy to engineer a benchmark that "passes" if you manipulate your data hard enough, so I tried to be objective.
 
@@ -65,8 +65,6 @@ Looking at how each model distributed its scores tells an interesting story:
 | 3 - Exact | 50 | 36 | 28 |
 
 The human labels were evenly distributed by design: 50 per category, since I sampled using round robin. The local model (Qwen3.5-9B-no_think) skewed toward harsher judgements, overcalling Irrelevant and undercalling Exact. GPT-5.4 had the opposite problem, inflating Substitute scores at the expense of Exact. Neither model perfectly mirrors human distribution, which is worth investigating further.
-
-The bigger question I kept running into: **who says the humans are right?** Looking at disagreements case by case, the AI was not always wrong, sometimes the human label felt off too. There is clearly room to improve: better sampling, better prompt engineering, more data. A GPT wrapper is not replacing expert judges just yet, but I do not think the experiment is dead either.
 
 One more thing worth calling out: using Spearman correlation here was probably a mistake. Spearman assumes the scores have a clean ordinal relationship, that 3 is strictly better than 2, which is better than 1, and so on. But ESCI labels are not really a relevance ladder: Substitute and Complement do not have an obvious ordering between them. Is a Substitute more relevant than a Complement? It depends entirely on context. So Spearman was likely penalizing the model for disagreements that do not actually matter. Exact agreement is probably best metric here and at 42.5% for local and 47% for GPT-5.4, there is clearly still work to do.
 
