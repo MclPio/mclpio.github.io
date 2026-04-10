@@ -207,7 +207,7 @@ The benchmark is ready. The next step is running judgement-ai against `results.j
 
 The balanced 3-3-3 label distribution was designed with these metrics in mind, weighted kappa and Spearman lose resolution under heavy class imbalance, and nDCG becomes less informative when one label dominates the ranking.
 
-I also want to run the same benchmark across a few models, I am thinking locally on `qwen3.5:9b`, and on API via `openai/gpt-5.4-mini` to see whether model choice matters more or less than prompt configuration.
+I also want to run the same benchmark across a few models, I am thinking locally with `qwen3.5:9b`, and API via `openai/gpt-5.4-mini` to see whether model choice matters more or less than prompt configuration.
 
 [judgement-ai](https://github.com/MclPio/judgement-ai) allows you to deeply customize your LLM calls, it can be unclear which settings are optimal. You can swap models and providers, tune temperature, set domain context, write custom grading instructions, or take full ownership with a prompt file. The scale labels themselves are configurable: 
 
