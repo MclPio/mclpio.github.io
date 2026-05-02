@@ -1,20 +1,28 @@
 ---
-title: "Building an LLM Judge for Search Relevance with WANDS, Qwen, and judgement-ai"
+title: "Fine-Tuning a Local LLM Judge with WANDS and Qwen"
 date: 2026-05-02
 categories:
   - data
   - fine-tuning
 tags:
-  - relevance
+  - llm-as-judge
+  - search-relevance
+  - product-search
   - benchmarking
-  - pandas
-  - llm
   - information-retrieval
   - qwen
+  - wands
   - unsloth
   - qlora
-description: How I prepared the Wayfair WANDS dataset, fine-tuned a local Qwen model, and benchmarked LLM-based relevance judging with judgement-ai.
+  - ollama
+  - judgement-ai
+description: A practical case study on preparing WANDS, fine-tuning a local Qwen model, and benchmarking LLM search relevance judges with judgement-ai.
+image: /assets/img/2026-05-02-judgement-ai/ARC-26122-2241-191x100.png
 ---
+
+I wanted to know whether a local LLM could act as a useful search relevance judge.
+
+This post is for people considering LLM-as-judge workflows for search, retrieval, or relevance grading. It is not a recipe for magically turning a small model into a human replacement. It is a case study in what happens when you actually try to do the whole thing: data prep, training, local inference, hosted-model comparison, and error analysis.
 
 ## Why I did this
 
@@ -24,7 +32,9 @@ WANDS was a good dataset for this because it is public, MIT-licensed, and built 
 
 This turned into a longer project than I expected. I prepared the dataset, built a benchmark split, fine-tuned a local Qwen model, ran the benchmark through `judgement-ai`, and then compared the local model against GPT-5.5 and an instruct Qwen baseline. The result was mixed: the fine-tuned local model improved, GPT-5.5 was still much stronger, and the whole process made it obvious that fine-tuning a useful judge is not a quick weekend task.
 
-There are many knobs: the dataset split, label balance, base model, prompt format, context length, learning rate, number of epochs, adapter settings, and evaluation metric. With limited compute, every choice feels expensive. That is the real reason this post is long. In addition to the final score table; I will present the full path from raw relevance data to a judged benchmark, and where the local model did or did not improve.
+There are many knobs: the dataset split, label balance, base model, prompt format, context length, learning rate, number of epochs, adapter settings, and evaluation metric. With limited compute, every choice feels expensive. That is the real reason this post is long. In addition to the final score table, I will present the full path from raw relevance data to a judged benchmark, including where the local model did and did not improve.
+
+The short version: the local fine-tuned model became more useful, but not good enough to replace human judges. The evaluation loop was the valuable part.
 
 ## Preparing WANDS for LLM relevance judging
 
@@ -111,7 +121,7 @@ The exported instruction-tuning rows contained an instruction, an input block, a
 }
 ```
 
-*Table 3. Example instruction-tuning row. The model receives query and product fields, then learns to return a score-only judgment. Note the actual json concatenates the input attributes.*
+*Table 3. Example instruction-tuning row. The model receives query and product fields, then learns to return a score-only judgment. Note that the actual JSONL file concatenates the input attributes into a single prompt string.*
 
 ## Building the benchmark set
 
@@ -323,9 +333,9 @@ The tradeoff was that the model became conservative. It often downgraded human `
 
 GPT-5.5 was still the strongest judge in this benchmark, but even it reached `0.705` quadratic weighted kappa rather than perfect agreement. That put the fine-tuning result in context: the task itself is messy, and WANDS-style relevance labels are not always easy to reproduce from product text alone.
 
-The hardest part of the project was not running a model over 500 rows. It was the number of decisions around the data and training setup: which base model to use, how to sample labels, how much to rebalance the dataset, how many epochs to train, how to write the prompt, and whether supervised fine-tuning is enough.
+The hardest part of the project was the number of decisions around the data and training setup: which base model to use, how to sample labels, how much to rebalance the dataset, how many epochs to train, how to write the prompt, and whether supervised fine-tuning is enough.
 
-I would not treat this run as the final answer. The next version should start with better disagreement analysis and a cleaner training-data strategy. After that, it may be worth trying an instruction-tuned base model, a different sampling distribution, or preference/RL-style training.
+The next experiment I would run is much narrower: take the cases where the fine-tuned model predicted `Partial` but the human label was `Exact`, inspect them manually, and rebuild the training set around that failure mode. Before trying a more complex method like RL or preference training, I would want to know whether the model lacked examples, misunderstood the rubric, or learned the wrong bias from the sampling strategy.
 
 The useful result from this work is the evaluation loop. `judgement-ai` gave me a way to run the same benchmark across local and hosted models, collect structured judgments, and compare those judgments against human labels. That turned model quality into something I could inspect instead of something I had to guess at.
 
