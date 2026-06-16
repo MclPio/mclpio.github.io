@@ -2,7 +2,7 @@
 title: "Building a Product Search Relevance Benchmark with WANDS"
 date: 2026-04-10
 categories:
-  - search
+  - Search
   - machine-learning
 tags:
   - relevance

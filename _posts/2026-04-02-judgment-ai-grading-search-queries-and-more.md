@@ -5,7 +5,7 @@ categories:
   - AI
   - Search
 tags:
-  - AI
+  - ai
   - Search
   - Tools
   - Python
