@@ -15,8 +15,6 @@ image: /assets/img/2026-06-16-uta-sensei.png
 
 > Field notes for the 2026 Build Small Hackathon.
 
-![Decorative Uta Sensei artwork](/assets/img/2026-06-16-uta-sensei.png)
-
 I built Uta Sensei because I listen to Japanese songs at the gym, usually in rotation with *southern hip hop* 🐬 In the car, doing normal life things, I kept thinking: repetition is already happening, so why not turn it into study?
 
 That is the whole product idea. Take lyrics from a song I already enjoy, turn them into a compact Japanese lesson, and make every replay a little more understandable than the last one.
